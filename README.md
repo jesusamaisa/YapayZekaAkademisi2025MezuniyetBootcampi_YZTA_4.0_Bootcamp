@@ -1,0 +1,2 @@
+# YapayZekaAkademisi2025MezuniyetBootcampi_YZTA_4.0_Bootcamp
+YapayZekaAkademisi2025MezuniyetBootcampi_YZTA_4.0_Bootcamp
