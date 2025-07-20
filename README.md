@@ -16,10 +16,6 @@ LungGuard
 
 **Radyologlara Yardımcı Akciğer İzleme Sistemi**
 
-## Product Backlog URL
-
-[LungGuard Miro Backlog Board](https://miro.com/app/board/uXjVO4kRs2w=/)
-
 ## Ürün Açıklaması
 
 Bu sistem, akciğer taramalarını (X-ray/CT) derin öğrenme algoritmaları ile analiz ederek radyologlara ön tanı ve rapor önerileri sunar. Görüntü işleme yetenekleri sayesinde doktorların teşhis süreçlerinde daha hızlı ve doğru karar almalarına yardımcı olur.
@@ -53,19 +49,6 @@ Sistem, temel ön işleme pipeline’ını ve ilk model prototipini başarıyla 
 
 * **Puan tamamlama mantığı:** Toplamda proje boyunca tamamlanması gereken yaklaşık 60 puanlık backlog bulunmaktadır. 2 sprint’e bölündüğünde ilk sprint'in 29 puan ile başlaması uygun görülmüştür.
 
-* **Daily Scrum:**
-  Daily Scrum toplantılarının zamanlama zorlukları nedeniyle **Google Chat** üzerinden yürütülmesine karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de paylaşılmıştır:
-  [📄 Sprint 1 Daily Scrum Notes](https://github.com/LungGuard/Sprint1Documents/DailyScrumNotes.docx)
-
-* **Sprint Board Update:**
-  Sprint board screenshotları:
-  ![Backlog 1](https://raw.githubusercontent.com/LungGuard/Sprint1Documents/backlog1.png)
-
-* **Ürün Durumu:**
-  Ekran görüntüleri:
-  ![Screenshot 1](https://github.com/LungGuard/Sprint1Documents/product1.png)
-  ![Screenshot 2](https://github.com/LungGuard/Sprint1Documents/product2.png)
-
 * **Sprint Review:**
   Alınan Kararlar:
 
@@ -85,70 +68,80 @@ Sprint Review katılımcıları: Ayşe Feyza Tekgöz, Muhammed Emin Canbaz, Meli
 
 ---
 
-## Product Backlog URL
+# Sprint 2 
 
-[LungGuard Miro Backlog Board](https://miro.com/app/board/uXjVO4kRs2w=/)
+## 🗓 Sprint Süresi
+📅 **Başlangıç:** 2025-07-14  
+📅 **Bitiş:** 2025-07-20  
 
----
-
-# Sprint 2 (Planlama Aşamasında)
-
-* **Sprint içinde tamamlanması tahmin edilen puan:** 31 Puan
-
-* **Daily Scrum:**
-  Daily Scrum toplantılarının Zoom üzerinden yapılmasına karar verilmiştir.
-
-* **Sprint Board Update:**
-  Sprint board screenshotları:
-  ![Backlog 2](https://github.com/LungGuard/Sprint2Documents/backlog2.png)
-
-* **Ürün Durumu:**
-  Ekran görüntüleri:
-  ![Screenshot 1](https://github.com/LungGuard/Sprint2Documents/product1.png)
-  ![Screenshot 2](https://github.com/LungGuard/Sprint2Documents/product2.png)
-
-* **Sprint Review:**
-  Alınan Kararlar:
-
-* Ön işleme modülleri optimize edildi.
-
-* Web arayüzü üzerinde temel testler gerçekleştirildi.
-
-* API entegrasyonları için taslak çalışmalar başlatıldı.
-
-Sprint Review katılımcıları: Ayşe Feyza Tekgöz, Muhammed Emin Canbaz, Melis Sağır, İrem Gültekin, Muhammed İsa Erkan
-
-* **Sprint Retrospective:**
-
-  * Kod inceleme (code review) sürecinin daha düzenli yapılmasına karar verildi.
-  * Belgelemeler eksiksiz tamamlanacak.
+## 🎯 Sprint Hedefi
+- Ön işleme modüllerinin optimizasyonu  
+- CNN modelinde doğruluk oranını artıracak hiperparametre ayarlamaları  
+- React tabanlı kullanıcı arayüzünün veri akışını simüle eden demo sürümünün tamamlanması  
+- Flask API taslağının çıkarılması ve Python ile React arasında test amaçlı bir bağlantı kurulması  
 
 ---
 
-## Product Backlog URL
+## ✅ Sprint İçinde Tamamlanan Görevler (31 Puan)
 
-[LungGuard Miro Backlog Board](https://miro.com/app/board/uXjVO4kRs2w=/)
+### 📂 Backend (Python) Çalışmaları
+- 📦 **Veri Ön İşleme**  
+  - Görüntü boyutlandırma optimizasyonu (resize işlemi sırasında kayıp en aza indirildi).  
+  - Denoising için Gaussian Blur denemeleri yapıldı ve %5 performans artışı sağlandı.  
+- 🧠 **Model İyileştirmeleri**  
+  - CNN katman sayısı optimize edilerek overfitting azaltıldı.  
+  - `ReduceLROnPlateau` callback ile learning rate dinamik olarak düşürüldü.  
+  - Model doğruluğu test setinde **%92.4 → %94.1** seviyesine çıkarıldı.  
+- 🌐 **API Taslağı**  
+  - Flask üzerinde bir endpoint (`/predict`) oluşturuldu.  
+  - Lokal testlerde React arayüzünden gelen görüntüler işlenip modelden yanıt dönüldü.
+
+---
+
+### 🖥 Frontend (React) Çalışmaları
+- 🖌 **Kullanıcı Arayüzü**  
+  - Görüntü yükleme ve önizleme modülü tamamlandı.  
+  - Simüle edilmiş yapay analiz sonuçları için risk ve öneri kartları eklendi.  
+  - Analiz geçmişi ve dashboard sekmeleri için dummy verilerle test yapıldı.  
+- 🔌 **API Entegrasyonu (Demo)**  
+  - React arayüzünden Flask API’ye istek gönderme iş akışı hazırlandı (henüz local test aşamasında).  
 
 ---
 
-# Sprint 3 (Planlanacak)
+## 📊 Ürün Durumu
 
-* **Sprint içinde tamamlanması tahmin edilen puan:** Önceki sprintlerden kalan puanlar ile toplam: 60 Puan
+### 🖥 Geliştirilmiş Arayüz Görüntüsü
+![WhatsApp Image 2025-07-12 at 17 15 49](https://github.com/user-attachments/assets/7316ae4d-4f40-43fd-843a-b188bfc586f2)
+![WhatsApp Image 2025-07-12 at 17 15 21](https://github.com/user-attachments/assets/4d2bdde9-8033-49ba-90bf-70268ae90cfe)
+![WhatsApp Image 2025-07-12 at 17 15 20](https://github.com/user-attachments/assets/dd25440e-c119-4d4d-bc61-236a37e1430d)
 
-* **Daily Scrum:**
-  Daily Scrum toplantıları, zaman yönetimini iyileştirmek için hibrit (çevrimiçi + fiziksel) şekilde yapılacaktır.
 
-* **Sprint Board Update:**
-  Sprint board screenshotları:
-  ![Backlog 3](https://github.com/LungGuard/Sprint3Documents/backlog3.png)
-
-* **Ürün Durumu:**
-  Ekran görüntüleri:
-  ![Screenshot 1](https://github.com/LungGuard/Sprint3Documents/product1.png)
-  ![Screenshot 2](https://github.com/LungGuard/Sprint3Documents/product2.png)
-
-* **Sprint Review & Retrospective:**
-  Geçmiş sprintler göz önünde bulundurularak eksikler kapatılacak ve ürünün MVP (Minimum Viable Product) versiyonu çıkartılacaktır.
+### 🧠 Model Eğitim Çıktısı
+![WhatsApp Image 2025-07-12 at 16 54 44](https://github.com/user-attachments/assets/43a7b16d-61ab-4fbd-85c5-bac05c3ed802)
+ 
+## 📜 Sprint Review
+🔹 **Katılımcılar:** Ayşe Feyza Tekgöz, Muhammed Emin Canbaz, Melis Sağır, İrem Gültekin, Muhammed İsa Erkan  
+🔹 **Alınan Kararlar:**  
+- Flask API entegrasyonu için Postman üzerinde kapsamlı test yapılacak.  
+- Model eğitimi bulut ortamına taşınabilir (Colab / Azure ML).  
+- Arayüz tarafında Tailwind CSS ile görsel iyileştirmeler yapılacak.  
 
 ---
+
+## 🔄 Sprint Retrospective
+✅ **İyi Gidenler:**  
+- Backend ve Frontend arasında ilk iletişim denemeleri başarıyla gerçekleştirildi.  
+- Takım içi iş bölümü verimliydi.  
+
+🚧 **İyileştirilecek Noktalar:**  
+- Flask API’nin deployment için Docker’a alınması gerekiyor.  
+- Model boyutunun mobil cihazlar için optimize edilmesi gündeme alındı.  
+
+---
+
+## 📌 Bir Sonraki Sprint için Notlar (Sprint 3)
+🎯 **Amaç:**  
+- API entegrasyonunu tamamen bitirmek  
+- Modeli H5 formatından TFLite’a dönüştürerek mobil uyumluluk sağlamak  
+- React arayüzünden canlı model tahmini alınabilecek bir MVP versiyonunu çıkarmak  
 
