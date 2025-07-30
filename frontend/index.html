@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Akciğer Röntgen Analizi</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Akciğer Röntgen Analizi</h1>
+
+  <div id="upload-area" class="drop-area">
+    <p>Görselinizi buraya sürükleyin veya seçin</p>
+    <input type="file" id="imageInput" accept="image/*">
+    <button onclick="uploadImage()">Analiz Et</button>
+  </div>
+
+  <div id="resultModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <p id="resultText"></p>
+    </div>
+  </div>
+
+  <h2>Genel İstatistikler</h2>
+  <div class="chart-wrapper">
+    <canvas id="statsChart" width="250" height="250"></canvas>
+  </div>
+
+  <h2>Geçmiş Analizler</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Tarih</th>
+        <th>Dosya Adı</th>
+        <th>Sonuç</th>
+        <th>Güven</th>
+      </tr>
+    </thead>
+    <tbody id="historyTable"></tbody>
+  </table>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

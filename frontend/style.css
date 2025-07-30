@@ -1,0 +1,119 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #0d1b2a, #1b263b);
+  color: #e0e1dd;
+  padding: 30px;
+  margin: 0;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #e0e1dd;
+}
+
+.drop-area {
+  border: 2px dashed #778da9;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+  background-color: #1b263b;
+  transition: background-color 0.3s ease;
+}
+
+.drop-area.dragover {
+  background-color: #415a77;
+}
+
+.drop-area p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+input[type="file"] {
+  display: block;
+  margin: 0 auto 10px;
+  color: white;
+}
+
+button {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+   background-color: #FFA500;
+}
+
+.chart-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+/* Grafik boyutunu küçültelim */
+canvas#statsChart {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #0d1b2a;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #415a77;
+}
+
+th {
+  background-color: #1b263b;
+  color: #f1faee;
+}
+
+td {
+  color: #e0e1dd;
+}
+
+/* Modal (pop-up) stil */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  background-color: #1b263b;
+  margin: 10% auto;
+  padding: 20px;
+  border: 2px solid #778da9;
+  width: 300px;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.close {
+  color: #e63946;
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
