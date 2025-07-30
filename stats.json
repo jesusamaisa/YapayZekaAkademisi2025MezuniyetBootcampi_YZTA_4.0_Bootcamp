@@ -1,0 +1,56 @@
+[
+  {
+    "filename": "person9_bacteria_39.jpeg",
+    "result": "PNEUMONIA",
+    "confidence": 80.24,
+    "timestamp": "2025-07-28 15:19:09"
+  },
+  {
+    "filename": "NORMAL2-IM-1288-0001.jpeg",
+    "result": "NORMAL",
+    "confidence": 97.46,
+    "timestamp": "2025-07-28 15:19:25"
+  },
+  {
+    "filename": "NORMAL2-IM-1290-0001.jpeg",
+    "result": "NORMAL",
+    "confidence": 97.35,
+    "timestamp": "2025-07-28 15:19:32"
+  },
+  {
+    "filename": "NORMAL2-IM-1290-0001.jpeg",
+    "result": "NORMAL",
+    "confidence": 97.35,
+    "timestamp": "2025-07-28 15:19:35"
+  },
+  {
+    "filename": "person992_virus_1670.jpeg",
+    "result": "PNEUMONIA",
+    "confidence": 94.19,
+    "timestamp": "2025-07-28 16:32:41"
+  },
+  {
+    "filename": "NORMAL2-IM-1285-0001.jpeg",
+    "result": "NORMAL",
+    "confidence": 99.44,
+    "timestamp": "2025-07-28 16:39:04"
+  },
+  {
+    "filename": "NORMAL2-IM-1286-0001.jpeg",
+    "result": "NORMAL",
+    "confidence": 83.92,
+    "timestamp": "2025-07-28 16:47:29"
+  },
+  {
+    "filename": "NORMAL2-IM-1290-0001.jpeg",
+    "result": "NORMAL",
+    "confidence": 97.35,
+    "timestamp": "2025-07-28 16:47:35"
+  },
+  {
+    "filename": "NORMAL2-IM-1326-0001.jpeg",
+    "result": "NORMAL",
+    "confidence": 77.9,
+    "timestamp": "2025-07-29 17:14:29"
+  }
+]
