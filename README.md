@@ -147,9 +147,9 @@ Sprint Review katılımcıları: Ayşe Feyza Tekgöz, Muhammed Emin Canbaz, Meli
 
 ---
 
-#Sprint 3
+# Sprint 3
 
-#Sprint Süresi
+## Sprint Süresi
 
 📅 **Başlangıç:** 2025-07-20  
 📅 **Bitiş:** 2025-08-03
