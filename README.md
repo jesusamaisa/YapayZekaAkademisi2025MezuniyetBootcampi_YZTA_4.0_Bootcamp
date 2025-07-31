@@ -47,7 +47,7 @@ Sistem, temel ön işleme pipeline’ını ve ilk model prototipini başarıyla 
 
 * **Sprint içinde tamamlanması tahmin edilen puan:** 29 Puan
 
-* **Puan tamamlama mantığı:** Toplamda proje boyunca tamamlanması gereken yaklaşık 60 puanlık backlog bulunmaktadır. 2 sprint’e bölündüğünde ilk sprint'in 29 puan ile başlaması uygun görülmüştür.
+* **Puan tamamlama mantığı:** Toplamda proje boyunca tamamlanması gereken yaklaşık 100 puanlık backlog bulunmaktadır. 3 sprint’e bölündüğünde ilk sprint'in 29 puan ile başlaması uygun görülmüştür.
 
 * **Sprint Review:**
   Alınan Kararlar:
@@ -84,7 +84,7 @@ Sprint Review katılımcıları: Ayşe Feyza Tekgöz, Muhammed Emin Canbaz, Meli
 
 ## ✅ Sprint İçinde Tamamlanan Görevler (31 Puan)
 
-### 📂 Backend (Python) Çalışmaları
+### 📂 Backend (Python) Çalışmaları (15 puan)
 - 📦 **Veri Ön İşleme**  
   - Görüntü boyutlandırma optimizasyonu (resize işlemi sırasında kayıp en aza indirildi).  
   - Denoising için Gaussian Blur denemeleri yapıldı ve %5 performans artışı sağlandı.  
@@ -98,7 +98,7 @@ Sprint Review katılımcıları: Ayşe Feyza Tekgöz, Muhammed Emin Canbaz, Meli
 
 ---
 
-### 🖥 Frontend (React) Çalışmaları
+### 🖥 Frontend (React) Çalışmaları (16 puan)
 - 🖌 **Kullanıcı Arayüzü**  
   - Görüntü yükleme ve önizleme modülü tamamlandı.  
   - Simüle edilmiş yapay analiz sonuçları için risk ve öneri kartları eklendi.  
@@ -144,4 +144,59 @@ Sprint Review katılımcıları: Ayşe Feyza Tekgöz, Muhammed Emin Canbaz, Meli
 - API entegrasyonunu tamamen bitirmek  
 - Modeli H5 formatından TFLite’a dönüştürerek mobil uyumluluk sağlamak  
 - React arayüzünden canlı model tahmini alınabilecek bir MVP versiyonunu çıkarmak  
+
+---
+
+#Sprint 3
+
+#Sprint Süresi
+
+📅 **Başlangıç:** 2025-07-20  
+📅 **Bitiş:** 2025-08-03
+
+## 🎯 Sprint Hedefi
+
+- Hazır modelin bir web arayüzüne entegre edilmesi
+- Sonuçların doğruluğunun kontrol edilmesi
+- Sonuçların kullanıcıya aktarılması
+- Genel tarihsel bir analiz sunulması
+
+---
+
+## ✅ Sprint İçinde Tamamlanan Görevler (40 Puan)
+
+### Backend Entegrasyonunun Sağlanması (20 Puan)
+
+- Main.py dosyasının içeriğinin tamamlanması (10 Puan)
+- Stats.json dosyasına doğru şekilde log girmek ve tarih analizini sağlamak (10 Puan)
+
+## Frontend ve Backend Arasındaki Bağlantının Sağlanması (20 Puan)
+
+- Frontend tasarımının estetiği ve doğruluğu (10 Puan)
+- Javascript ile doğru şekilde veri aktarımı sağlamak (10 Puan)
+
+### Günlük Toplantı Notları
+
+- 21.07.2025 - Projenin gidişatı için süreç planlandı
+- 22.07.2025 - Süreçteki görevler ve kişilere ataması sağlandı
+- 23.07.2025 - main.py dosyasının ana iskeleti için fikir alışverişi yapıldı
+- 24.07.2025 - main.py dosyasına veri gelmesi için tasarım sayfalarının önce oluşturulması gerektiğine karar verildi
+- 25.07.2025 - Tasarım için react değil basit html ve css teknolojisi kullanılmasına karar verildi
+- 28.07.2025 - main dosyası ve tasarımın halledilmesi arasındaki bağ için tekrar bir toplantı sağlandı
+- 29.07.2025 - Ana iskelet bitti ve css özellikleri ile güzelleştirildi
+- 30.07.2025 - Grafikler oluşturuldu ve doğru veri ile görselleştirildi
+- 31.07.2025 - Proje ekip içerisinde tamamlandı ve MVP ortaya çıktı.
+
+## Sprint Notları
+
+- Proje için gerekli ekip çalışması sağlandı
+- Başta React ile planlanan önyüz html ve css'in ham kullanımı ile sağlandı
+- Javascript ile verilerin backend'e taşınması sağlandı
+- main.py dosyası vasıtası ile projenin backendi Python dilinde oluşturuldu ve tamamlandı
+- Proje MVP olarak sunulmaya hazır hale getirildi!
+
+<img width="1891" height="990" alt="image" src="https://github.com/user-attachments/assets/0d9200ba-917e-4d37-9086-dd2b4f43fae2" />
+
+
+
 
